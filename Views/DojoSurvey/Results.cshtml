@@ -1,3 +1,4 @@
+@model DojoSurvey.Models.Survey
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,10 +17,10 @@
     <div class="d-flex justify-content-center mt-3 mr-5">
             <ul class="list-group">
                 <h1>Submitted Info:</h1>
-                <li class="list-group-item list-group-item-action">Name: @ViewBag.Name</li>
-                <li class="list-group-item list-group-item-action">Location: @ViewBag.Location</li>
-                <li class="list-group-item list-group-item-action">Language: @ViewBag.Language</li>
-                <li class="list-group-item list-group-item-action">Comment: @ViewBag.Comment</li>
+                <li class="list-group-item list-group-item-action">Name: @Model.Name</li>
+                <li class="list-group-item list-group-item-action">Location: @Model.Location</li>
+                <li class="list-group-item list-group-item-action">Language: @Model.Language</li>
+                <li class="list-group-item list-group-item-action">Comment: @Model.Comment</li>
             </ul>
         </div>
 </body>
